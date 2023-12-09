@@ -9,7 +9,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.silford.mysibsau.adapter.ProfileDataAdapter;
 import com.silford.mysibsau.model.ProfileData;
 
@@ -56,6 +59,7 @@ public class ProfileFragment extends Fragment {
 
     RecyclerView ProfileDataRecyclerView;
     ProfileDataAdapter ProfileDataAdapter;
+    ImageView settingsBtn;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -64,7 +68,6 @@ public class ProfileFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-
     }
 
     @Override
@@ -76,13 +79,24 @@ public class ProfileFragment extends Fragment {
 
         List<ProfileData> ProfileDataList = new ArrayList<>();
         ProfileDataList.add(new ProfileData(1, getString(R.string.Birthday), "14.08.2002", true));
-        ProfileDataList.add(new ProfileData(2, getString(R.string.Birthday), "14.08.2002", true));
-        ProfileDataList.add(new ProfileData(3, getString(R.string.Birthday), "14.08.2002", true));
-        ProfileDataList.add(new ProfileData(4, getString(R.string.Birthday), "14.08.2002", false));
+        ProfileDataList.add(new ProfileData(2, getString(R.string.Group), "БИС 22-02", true));
+        ProfileDataList.add(new ProfileData(3, getString(R.string.Telephone), "+7 (913 040 53-08)", true));
+        ProfileDataList.add(new ProfileData(4, getString(R.string.Email), "fearthenock@vk.com", false));
 
         ProfileDataRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), RecyclerView.VERTICAL, false));
         ProfileDataAdapter = new ProfileDataAdapter(getContext(), ProfileDataList);
         ProfileDataRecyclerView.setAdapter(ProfileDataAdapter);
+
+        settingsBtn = view.findViewById(R.id.bnt_goToSettings);
+
+        settingsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getActivity().getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new SettingsFragment()).commit();
+                BottomNavigationView bnw = getActivity().findViewById(R.id.BottomNavigationView);
+                bnw.setVisibility(View.INVISIBLE);
+            }
+        });
 
         return view;
     }
