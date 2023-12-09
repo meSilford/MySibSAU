@@ -1,9 +1,14 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.MySibSAU" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <item name="colorPrimary">#e6e6e6</item>
+        <item name="android:navigationBarColor">#e6e6e6</item>
+        <item name="android:navigationBarDividerColor">#e6e6e6</item>
+        <item name="android:background">#e6e6e6</item>
+        <item name="android:textColor">#222222</item>
+        <item name="cardBackgroundColor">#fff</item>
     </style>
 
     <style name="Theme.MySibSAU" parent="Base.Theme.MySibSAU" />
+
 </resources>

@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
+
     <style name="Base.Theme.MySibSAU" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="colorPrimary">#1d1d27</item>
+        <item name="android:navigationBarColor">#1d1d27</item>
+        <item name="android:navigationBarDividerColor">#1d1d27</item>
+        <item name="android:background">#1d1d27</item>
+        <item name="android:textColor">#e6e6e6</item>
+        <item name="cardBackgroundColor">#272733</item>
     </style>
+
 </resources>

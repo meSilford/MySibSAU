@@ -1,3 +1,23 @@
 <resources>
-    <string name="app_name">MySibSAU</string>
+    <string name="app_name" translatable="false">MySibSAU</string>
+    <string name="nav_News">News</string>
+    <string name="nav_Home">Home</string>
+    <string name="nav_Profile">Profile</string>
+    <string name="nav_Bells">Bells</string>
+    <string name="nav_Schedule">Schedule</string>
+    <string name="nav_Search">Search</string>
+    <string name="AcademicPerformance">Academic performance</string>
+    <string name="Online">Online</string>
+    <string name="Offline">Offline</string>
+    <string name="Credentials">Credentials</string>
+    <string name="Birthday">Birthday</string>
+    <string name="Group">Group</string>
+    <string name="Telephone">Phone</string>
+    <string name="Email">Email</string>
+    <string name="Settings">Settings</string>
+    <string name="LogOut">Log out of your account</string>
+    <string name="ThemeTitle">The theme of the application</string>
+    <string name="DarkTheme">Dark theme</string>
+    <string name="SystemTheme">System theme</string>
+    <string name="DeviceTheme">Use the device theme</string>
 </resources>

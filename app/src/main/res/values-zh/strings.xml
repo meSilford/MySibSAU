@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_News">新闻</string>
+    <string name="nav_Home">主要</string>
+    <string name="nav_Profile">个人资料</string>
+    <string name="nav_Bells">电话</string>
+    <string name="nav_Schedule">时间表</string>
+    <string name="nav_Search">搜索</string>
+    <string name="AcademicPerformance">学术表现</string>
+    <string name="Online">网上</string>
+    <string name="Offline">离线状态</string>
+    <string name="Credentials">全权证书</string>
+    <string name="Birthday">生日</string>
+    <string name="Group">团体</string>
+    <string name="Telephone">电话</string>
+    <string name="Email">电邮</string>
+    <string name="Settings">设置</string>
+    <string name="LogOut">注销您的帐户</string>
+    <string name="ThemeTitle">应用程序的主题</string>
+    <string name="DarkTheme">黑暗主题</string>
+    <string name="SystemTheme">系统主题</string>
+    <string name="DeviceTheme">使用设备主题</string>
+</resources>

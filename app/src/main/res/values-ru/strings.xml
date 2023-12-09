@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="nav_News">Новости</string>
+    <string name="nav_Home">Главная</string>
+    <string name="nav_Profile">Профиль</string>
+    <string name="nav_Bells">Звонки</string>
+    <string name="nav_Schedule">Расписание</string>
+    <string name="nav_Search">Поиск</string>
+    <string name="AcademicPerformance">Успеваемость</string>
+    <string name="Online">В сети</string>
+    <string name="Offline">Не в сети</string>
+    <string name="Credentials">Учетные данные</string>
+    <string name="Birthday">День рождения</string>
+    <string name="Group">Группа</string>
+    <string name="Telephone">Телефон</string>
+    <string name="Email">Электронная почта</string>
+    <string name="Settings">Настройки</string>
+    <string name="LogOut">Выйти из аккаунта</string>
+    <string name="ThemeTitle">Тема приложения</string>
+    <string name="DarkTheme">Тёмная тема</string>
+    <string name="SystemTheme">Системная тема</string>
+    <string name="DeviceTheme">Использовать тему устройства</string>
+</resources>

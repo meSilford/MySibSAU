@@ -10,9 +10,10 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven(uri("https://jitpack.io"))
     }
 }
 
 rootProject.name = "MySibSAU"
-include(":app")
+include(":app",":touchview")
  
