@@ -3,12 +3,33 @@
     <style name="Base.Theme.MySibSAU" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">#e6e6e6</item>
         <item name="android:navigationBarColor">#e6e6e6</item>
-        <item name="android:navigationBarDividerColor">#e6e6e6</item>
-        <item name="android:background">#e6e6e6</item>
-        <item name="android:textColor">#222222</item>
-        <item name="cardBackgroundColor">#fff</item>
+        <item name="android:outlineSpotShadowColor">@android:color/transparent</item>
+        <item name="android:outlineAmbientShadowColor">@android:color/transparent</item>
     </style>
 
     <style name="Theme.MySibSAU" parent="Base.Theme.MySibSAU" />
+
+    <style name="Background">
+        <item name="android:background">#e6e6e6</item>
+    </style>
+
+    <style name="bnv_main">
+        <item name="android:background">@drawable/bnv_corner</item>
+        <item name="itemIconTint">@drawable/menu_selector</item>
+    </style>
+
+    <style name="PROFILE_TopPanel">
+        <item name="android:tint">#222222</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <style name="PROFILE_CardView">
+        <item name="cardBackgroundColor">#ffffff</item>
+        <item name="android:textColor">#222222</item>
+    </style>
+
+    <style name="PROFILE_CardView_Sub">
+        <item name="android:textColor">#a1a2a7</item>
+    </style>
 
 </resources>
