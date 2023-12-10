@@ -20,4 +20,10 @@
     <string name="DarkTheme">黑暗主题</string>
     <string name="SystemTheme">系统主题</string>
     <string name="DeviceTheme">使用设备主题</string>
+    <string name="LocalizationTitle">本地化</string>
+    <string name="Interface">界面</string>
+    <string name="LanguageTitle">语言</string>
+    <string name="RussianSubTitle">俄语</string>
+    <string name="EnglishSubTitle">英语 (美国)</string>
+    <string name="ChinaSubTitle">中国语文 (中国)</string>
 </resources>

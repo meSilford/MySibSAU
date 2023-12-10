@@ -20,4 +20,10 @@
     <string name="DarkTheme">Тёмная тема</string>
     <string name="SystemTheme">Системная тема</string>
     <string name="DeviceTheme">Использовать тему устройства</string>
+    <string name="LocalizationTitle">Локализация</string>
+    <string name="Interface">" Интерфейс "</string>
+    <string name="LanguageTitle">Язык</string>
+    <string name="RussianSubTitle">Русский</string>
+    <string name="EnglishSubTitle">Английский, США</string>
+    <string name="ChinaSubTitle">Китайский, Китай</string>
 </resources>

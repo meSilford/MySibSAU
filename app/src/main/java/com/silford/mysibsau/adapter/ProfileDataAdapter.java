@@ -1,6 +1,8 @@
 package com.silford.mysibsau.adapter;
 
 import android.content.Context;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -24,6 +26,7 @@ public class ProfileDataAdapter extends RecyclerView.Adapter<ProfileDataAdapter.
         this.context = context;
         ProfileDatasList = profileDatasList;
     }
+
 
     @NonNull
     @Override

@@ -6,14 +6,18 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.fragment.app.Fragment;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -24,18 +28,21 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         sharedPreferences = getSharedPreferences("GLOBAL_SETTINGS", Context.MODE_PRIVATE);
 
-        sharedPreferences.edit().putBoolean("isSystemTheme", true).apply();
-
         if(!sharedPreferences.contains("isNightTheme")){
             sharedPreferences.edit().putBoolean("isNightTheme", false).apply();
         }
         if(!sharedPreferences.contains("isSystemTheme")){
             sharedPreferences.edit().putBoolean("isSystemTheme", false).apply();
         }
+        if(!sharedPreferences.contains("language")) {
+            sharedPreferences.edit().putString("language", Locale.getDefault().getLanguage()).apply();
+        }
         if(sharedPreferences.getBoolean("isSystemTheme", false)) {
             sharedPreferences.edit().putBoolean("isNightTheme", isNightThemeOnMobile()).apply();
         }
+
         AppCompatDelegate.setDefaultNightMode(sharedPreferences.getBoolean("isNightTheme", false) ? AppCompatDelegate.MODE_NIGHT_YES : AppCompatDelegate.MODE_NIGHT_NO);
+        setLocale(this, sharedPreferences.getString("language","en"));
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -55,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 switch(item.getItemId())
                 {
                     case R.id.nav_news:
-                        fragment = new NewsFragment();
+                        fragment = new LanguagesFragment();
                         break;
                     case R.id.nav_home:
                         fragment = new HomeFragment();
@@ -77,5 +84,14 @@ public class MainActivity extends AppCompatActivity {
             case Configuration.UI_MODE_NIGHT_NO: return false;
         }
         return false;
+    }
+
+    public static void setLocale(Activity activity, String languageCode) {
+        Locale locale = new Locale(languageCode);
+        Locale.setDefault(locale);
+        Resources resources = activity.getResources();
+        Configuration config = resources.getConfiguration();
+        config.setLocale(locale);
+        resources.updateConfiguration(config, resources.getDisplayMetrics());
     }
 }

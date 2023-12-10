@@ -32,4 +32,9 @@
         <item name="android:textColor">#a1a2a7</item>
     </style>
 
+    <style name="SWITCH">
+        <item name="android:track">@drawable/switch_custom_track_night</item>
+        <item name="android:thumb">@drawable/switch_custom_thumb</item>
+    </style>
+
 </resources>
